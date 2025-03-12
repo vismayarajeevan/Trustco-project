@@ -355,7 +355,7 @@ button:hover {
       display: none;
     }
     .hero {
-        min-height: 110vh;
+        min-height: 150vh;
         margin-top: 50px;
         text-align: center;
         padding: 1rem;
@@ -385,7 +385,7 @@ button:hover {
         align-items: center;
         justify-content: center;
         gap: 1rem;
-        margin-top: 15rem; 
+        margin-top: 20rem; 
         pointer-events: auto; 
     }
 
@@ -656,6 +656,7 @@ button:hover {
     display: flex;
     gap: 2rem;
     flex: 2;
+    margin-top: 80px;
 }
 
 .card {
@@ -707,6 +708,7 @@ button:hover {
     }
 
     .heros h1 {
+        margin-top: 20px;
         text-align: center; 
         font-size: 1rem;
     }
