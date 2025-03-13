@@ -823,7 +823,7 @@ button:hover {
 }
 
 blockquote {
-    font-size: 1.25rem;
+    font-size: 1rem;
     line-height: 1.6;
     color: #4a4a4a;
     margin-bottom: 2rem;
@@ -948,7 +948,7 @@ blockquote {
     }
 
     blockquote {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
 
     .circle-image {
@@ -964,12 +964,12 @@ blockquote {
 
 
 .bridge-container {
-    max-width: 1200px;
+   
     display: flex;
-    gap: 4rem;
+    gap: 15rem;
     align-items: center;
     padding-top: 100px;
-    padding-bottom: 50px;
+    
     margin: 0 auto;
 }
 
@@ -982,7 +982,9 @@ blockquote {
 .main-image {
     width: 100%;
     height: auto;
-    border-radius: 20px;
+   
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     display: block;
 }
 
@@ -1099,8 +1101,8 @@ blockquote {
         margin-bottom: 50px;
     }
     .main-image {
-        max-width: 80%; /* Reduce the image size to 80% of its container */
-        margin: 0 auto; /* Center the image horizontally */
+        max-width: 80%; 
+        margin: 0 auto;
     }
 
     .content {
@@ -1149,7 +1151,7 @@ blockquote {
         font-size: 1rem;
     }
     .main-image {
-        max-width: 70%; /* Further reduce the image size to 70% of its container */
+        max-width: 70%; 
     }
 
     .award-badge {
@@ -1163,3 +1165,159 @@ blockquote {
     }
     
 }
+
+/* testimony */
+
+
+.testimony-container {
+   
+    padding: 100px;
+    margin: 0 auto;
+    width: 100%;
+    background-color: var(--primary-color);
+  }
+  
+  .head {
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+    
+   
+  }
+  
+  h1 {
+    font-size: 3rem;
+    color: #1a1a1a;
+    font-weight: 600;
+  }
+  
+  .see-all {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .testimonials-wrapper {
+    position: relative;
+  }
+  
+  .testimonials {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-bottom: 2rem;
+  }
+  
+  .testimonials::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .testimonial-card {
+    flex: 0 0 auto;
+    width: calc(48% - 1rem);
+    min-width: 280px;
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    scroll-snap-align: start;
+  }
+  
+  .quote {
+    font-size: 4rem;
+    color: #ffd700;
+    line-height: 1;
+    margin-bottom: -1rem;
+  }
+  
+  .testimonial-text {
+    color: #1a1a1a;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 1rem 0 2rem;
+  }
+  
+  .author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .author-image {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .author-info h3 {
+    font-size: 1rem;
+    color: #1a1a1a;
+    margin-bottom: 0.25rem;
+  }
+  
+  .author-info p {
+    font-size: 0.875rem;
+    color: #666;
+  }
+  
+  .scroll-indicator {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+  }
+  
+  .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ddd;
+  }
+  
+  .dot.active {
+    width: 24px;
+    border-radius: 12px;
+    background-color: #1a1a1a;
+  }
+  
+  @media (max-width: 768px) {
+    .head {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .testimonial-card {
+      width: calc(50% - 2rem);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .testimony-container{
+        padding: 50px;
+    }
+    .head {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .testimonial-card {
+      width: calc(40% - 2rem);
+    }
+  }
