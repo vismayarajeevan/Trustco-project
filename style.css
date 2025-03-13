@@ -355,7 +355,7 @@ button:hover {
       display: none;
     }
     .hero {
-        min-height: 110vh;
+        min-height: 150vh;
         margin-top: 50px;
         text-align: center;
         padding: 1rem;
@@ -385,7 +385,7 @@ button:hover {
         align-items: center;
         justify-content: center;
         gap: 1rem;
-        margin-top: 15rem; 
+        margin-top: 20rem; 
         pointer-events: auto; 
     }
 
@@ -656,6 +656,7 @@ button:hover {
     display: flex;
     gap: 2rem;
     flex: 2;
+    margin-top: 80px;
 }
 
 .card {
@@ -707,6 +708,7 @@ button:hover {
     }
 
     .heros h1 {
+        margin-top: 20px;
         text-align: center; 
         font-size: 1rem;
     }
@@ -733,5 +735,223 @@ button:hover {
 
     h1 {
         font-size: 3rem;
+    }
+}
+
+/* number */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    width: 100%;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    text-align: center;
+}
+
+.stat-item {
+    padding: 1rem;
+}
+
+.stat-number {
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: #0d3b66;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.stat-label {
+    font-size: 1.125rem;
+    color: #4a5568;
+    font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .stat-number {
+        font-size: 3rem;
+    }
+
+    .stat-label {
+        font-size: 1rem;
+    }
+}
+
+
+/* meet our founder section */
+
+
+.meet-container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center; 
+    padding: 2rem; 
+    margin: 0 auto; 
+    background-color: white; 
+   
+}
+
+.meet-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.meet-content h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #1a1a1a;
+}
+
+blockquote {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: #4a4a4a;
+    margin-bottom: 2rem;
+}
+
+.founder-info {
+    margin-bottom: 2rem;
+}
+
+.founder-info h2 {
+    font-size: 1.5rem;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+}
+
+.founder-info p {
+    color: #666;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.7rem 1.3rem;
+    background-color: #003B4A;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #002A35;
+}
+
+.cta-button::after {
+    content: "→";
+    margin-left: 0.5rem;
+}
+
+.images {
+    flex: 1;
+    position: relative;
+    max-width: 500px;
+}
+
+.main-image {
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.main-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.circle-image {
+    position: absolute;
+    bottom: -30px;
+    left: -10px;
+     width: 150px;
+    height: 150px;
+   
+}
+
+.circle-image img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+@media (max-width: 1024px) {
+    .meet-container {
+        gap: 2rem;
+    }
+    
+    .meet-content h1{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .meet-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .meet-content {
+        margin-bottom: 2rem;
+        order: 1;
+    }
+
+    .images {
+        width: 100%;
+        max-width: 400px;
+        order: 2;
+    }
+
+    .cta-button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .circle-image {
+        bottom: -30px; 
+        left: -10px; 
+        transform: none; 
+    }
+}
+
+@media (max-width: 480px) {
+   
+
+    .meet-content h1 {
+        font-size: 2rem;
+    }
+
+    blockquote {
+        font-size: 1.1rem;
+    }
+
+    .circle-image {
+        width: 100px;
+        height: 100px;
+        bottom: -30px; 
+        left: -10px; 
     }
 }
