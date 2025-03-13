@@ -1720,3 +1720,146 @@ blockquote {
         gap: 2rem;
     }
 }
+
+/* footer */
+
+
+
+
+.footer {   
+     background-color: var(--primary-color);
+
+
+    margin-top: auto;
+    padding: 2rem 0 0;
+}
+
+.footer-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border: 1px solid grey;
+}
+
+.academy-text {
+    text-align: center;
+    color: #666;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+.academy-link {
+    color: #6366f1;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.academy-link:hover {
+    text-decoration: underline;
+}
+
+.collaborators-section h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.collaborators-grid {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.collaborator-img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.bottom-footer {
+    background: white;
+    border-top: 2px solid grey;
+}
+
+.bottom-footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.copyright {
+    color: #666;
+    font-size: 0.875rem;
+}
+.bottom-container {
+    background-color: var(--primary-color);
+    padding: 1rem 2rem; 
+} 
+.footer-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-links a {
+    color: #666;
+    text-decoration: none;
+    font-size: 0.875rem;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: #333;
+}
+
+.language-selector {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.globe-icon {
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+}
+
+.language-selector select {
+    border: none;
+    background: none;
+    color: #666;
+    font-size: 0.875rem;
+    cursor: pointer;
+    padding-right: 1rem;
+}
+
+.language-selector select:focus {
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    .bottom-footer-content {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .footer-card {
+        
+        max-width: 350px;
+        
+    }
+
+    .collaborators-grid {
+        justify-content: center;
+    }
+}
