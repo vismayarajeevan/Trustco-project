@@ -1597,10 +1597,7 @@ blockquote {
     padding-top: 80px;
 }
 
-.header {
-    padding: 2rem 0;
-    border-bottom: 1px solid #eee;
-}
+
 
 .header-content {
     display: flex;
